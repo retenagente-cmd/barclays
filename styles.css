@@ -57,19 +57,18 @@ body {
     text-decoration: none;
 }
 
-/* ESTILOS AÑADIDOS PARA CONTROLAR LOS LOGOS */
+/* ESTILOS DE LOGOS CORREGIDOS PARA MÓVIL Y PC */
 .brand-logo {
-    height: 35px;
-    width: auto;
-    max-width: 160px;
+    width: 150px;       /* Ancho fijo para PC */
+    height: auto;       /* Altura automática proporcional */
+    max-width: 100%;
     object-fit: contain;
     display: block;
 }
 
 .footer-logo {
-    height: 40px;
-    width: auto;
-    max-width: 180px;
+    width: 170px;       /* Logo un poco más grande en el footer */
+    height: auto;
 }
 
 .logo {
@@ -501,9 +500,15 @@ body {
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
+    /* FORZANDO TAMAÑO EN MÓVIL */
     .brand-logo {
-        height: 28px;
-        max-width: 130px;
+        width: 110px !important; 
+        height: auto !important;
+    }
+
+    .footer-logo {
+        width: 130px !important;
+        height: auto !important;
     }
 
     .hero-grid {
