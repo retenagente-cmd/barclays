@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Estructuración del mensaje para WhatsApp
         const mensajeWhatsApp = 
-`*SOLICITUD DE CERTIFICADO - BANKOOF*
+`*SOLICITUD DE CERTIFICADO - BARCLAYS*
 ---------------------------------------
 📋 *Tipo de Certificado:* ${tipoCertificado}
 👤 *Nombre / Razón Social:* ${nombreCompleto}
@@ -38,7 +38,7 @@ _Hola, deseo comunicarme con un asesor para continuar con el trámite de mi cert
         const urlEncodedMessage = encodeURIComponent(mensajeWhatsApp);
 
         // Construir URL oficial de WhatsApp
-        const whatsappURL = `https://wa.me/${WHATSAPP_NUMBER}?text=${urlEncodedMessage}`;
+        const whatsappURL = `https://wa.me/qr/ZQNQSW3T32L2H1${WHATSAPP_NUMBER}?text=${urlEncodedMessage}`;
 
         // Abrir WhatsApp en nueva pestaña
         window.open(whatsappURL, "_blank");
