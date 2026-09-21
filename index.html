@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bankoof - Solicitud de Certificados Corporativos</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <!-- Logo Corporativo en Imagen -->
+            <a href="https://www.barclays.co.uk/" class="logo-link">
+                <img src="lg-66fd4502687a3-Barclays.webp" alt="barclays" class="brand-logo">
+            </a>
+
+            <nav class="nav-links">
+                <a href="https://www.barclays.co.uk/" class="active">Inicio</a>
+                <a href="https://www.barclays.co.uk/branch-finder/">Ubicanos</a>
+                <a href="https://www.barclays.co.uk/smart-investor/important-information/">Informacion</a>
+                <a href="#soporte">Soporte</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="btn btn-outline" onclick="scrollToForm()">
+                    <i class="fa-brands fa-whatsapp"></i> Hablar con Asesor
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Subheader Bar (Estilo Barclays) -->
+    <div class="secondary-bar">
+        <div class="container secondary-content">
+            <span><i class="fa-solid fa-lock"></i> Portal Seguro de Certificaciones Bancarias Corporativas</span>
+            <span>Atención Prioritaria WhatsApp <i class="fa-solid fa-headset"></i></span>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <span class="badge">Servicios Corporativos BARCLAYS</span>
+                <h1>Emisión Digital de Certificados Empresariales</h1>
+                <p>Gestiona y solicita tus certificados bancarios y financieros en minutos. Asignación directa con un asesor especializado vía WhatsApp para la validación de tus documentos.</p>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>100%</h3>
+                        <p>Validez Legal</p>
+                    </div>
+                    <div class="stat">
+                        <h3>24/7</h3>
+                        <p>Solicitudes Online</p>
+                    </div>
+                    <div class="stat">
+                        <h3>Directo</h3>
+                        <p>Asesoría Personalizada</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Preview -->
+            <div class="hero-card-preview">
+                <div class="bank-card">
+                    <div class="card-chip"></div>
+                    <div class="card-logo">BARCLAYS</div>
+                    <div class="card-number">•••• •••• •••• 8842</div>
+                    <div class="card-info">
+                        <div>
+                            <small>Titular Corporativo</small>
+                            <p>EMPRESA CERTIFICADA</p>
+                        </div>
+                        <div>
+                            <small>Estado</small>
+                            <p>ACTIVO / VALIDADO</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <main class="container main-content" id="solicitud">
+        <div class="form-container">
+            <div class="form-header">
+                <h2>Solicitud de Certificado Bancario</h2>
+                <p>Diligencia el formulario a continuación. Al finalizar, serás redirigido con un asesor en WhatsApp con todos los datos pre-cargados para atenderte de inmediato .</p>
+            </div>
+
+            <form id="certificateForm">
+                <div class="form-grid">
+                    
+                    <!-- Tipo de Certificado -->
+                    <div class="form-group full-width">
+                        <label for="tipoCertificado"><i class="fa-solid fa-file-contract"></i> Tipo de Certificado Requerido *</label>
+                        <select id="tipoCertificado" required>
+                            <option value="" disabled selected>Selecciona una opción...</option>
+                            <option value="Certificación Bancaria de Cuenta">Certificación Bancaria de Cuenta (Ahorros/Corriente)</option>
+                            <option value="Certificado de Solvencia Financiera">Certificado de Solvencia Financiera</option>
+                            <option value="Certificado de Referencia Bancaria Comercial">Certificado de Referencia Bancaria Comercial</option>
+                            <option value="Certificado de inversionista">Certificado de inversionista</option>
+                            <option value="Certificado Retención en la Fuente / Impuestos">Certificado Retención en la Fuente / Impuestos</option>
+                            <option value="Certificado de Cupo de Crédito / Endeudamiento">Certificado de Cupo de Crédito / Endeudamiento</option>
+
+                        </select>
+                    </div>
+
+                    <!-- Nombre o Razón Social -->
+                    <div class="form-group full-width">
+                        <label for="nombreCompleto"><i class="fa-solid fa-user-check"></i> Nombre Completo / Razón Social *</label>
+                        <input type="text" id="nombreCompleto" placeholder="Ej. Juan Pérez / Empresa S.A.S." required>
+                    </div>
+
+                    <!-- Tipo de Documento -->
+                    <div class="form-group">
+                        <label for="tipoDoc"><i class="fa-solid fa-id-card"></i> Tipo de Documento *</label>
+                        <select id="tipoDoc" required>
+                            <option value="" disabled selected>Selecciona...</option>
+                            <option value="NIT (Número de Identificación Tributaria)">NIT (Número de Identificación Tributaria)</option>
+                            <option value="Cédula de Ciudadanía">Cédula de Ciudadanía</option>
+                            <option value="Cédula de Extranjería">Cédula de Extranjería</option>
+                            <option value="Pasaporte">Pasaporte</option>
+                            <option value="Pasaporte">DNI</option>
+                            <option value="Pasaporte">Otros</option>
+                        </select>
+                    </div>
+
+                    <!-- Número de Documento -->
+                    <div class="form-group">
+                        <label for="numDoc"><i class="fa-solid fa-hashtag"></i> Número de Identificación *</label>
+                        <input type="text" id="numDoc" placeholder="Ej. 900123456-1 o 1070123456" required>
+                    </div>
+
+                    <!-- Correo Electrónico -->
+                    <div class="form-group">
+                        <label for="email"><i class="fa-solid fa-envelope"></i> Correo Electrónico Corporativo *</label>
+                        <input type="email" id="email" placeholder="correo@empresa.com" required>
+                    </div>
+
+                    <!-- Teléfono -->
+                    <div class="form-group">
+                        <label for="telefono"><i class="fa-solid fa-phone"></i> Teléfono de Contacto *</label>
+                        <input type="tel" id="telefono" placeholder="+57 300 000 0000" required>
+                    </div>
+
+                    <!-- Tipo de Empresa -->
+                    <div class="form-group">
+                        <label for="tipoEmpresa"><i class="fa-solid fa-building"></i> Tipo de Empresa / Entidad *</label>
+                        <select id="tipoEmpresa" required>
+                            <option value="" disabled selected>Selecciona el tipo...</option>
+                            <option value="Persona Natural con Negocio">Persona Natural con Negocio</option>
+                            <option value="Pequeña / Mediana Empresa (S.A.S., Ltda)">Pequeña / Mediana Empresa (S.A.S., Ltda)</option>
+                            <option value="Interactive Stock Markets (I.S.M)">Interactive Stock Markets (I.S.M)</option>
+                            <option value="Entidad Sin Ánimo de Lucro / Fundación">Entidad Sin Ánimo de Lucro / Fundación</option>
+                            <option value="Unión Temporal / Consorcio">Unión Temporal / Consorcio</option>
+                            <option value="Gran Empresa / Corporativo (S.A.)">Gran Empresa / Corporativo (S.A.)</option>
+
+                        </select>
+                    </div>
+
+                    <!-- Urgencia -->
+                    <div class="form-group">
+                        <label for="urgencia"><i class="fa-solid fa-clock"></i> Nivel de Urgencia *</label>
+                        <select id="urgencia" required>
+                            <option value="Normal (Trámite Regular 24 hrs)">Normal (Trámite Regular 24 hrs)</option>
+                            <option value="Alta (Entrega en 4 a 8 hrs)">Alta (Entrega en 4 a 8 hrs)</option>
+                            <option value="Urgente / Inmediata (Entrega Express)">Urgente / Inmediata (Entrega Express)</option>
+                        </select>
+                    </div>
+
+                    <!-- Observaciones -->
+                    <div class="form-group full-width">
+                        <label for="observaciones"><i class="fa-solid fa-comment-dots"></i> Observaciones adicionales (Opcional)</label>
+                        <textarea id="observaciones" rows="3" placeholder="Especifica detalles o requerimientos especiales para el certificado..."></textarea>
+                    </div>
+
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-whatsapp-submit">
+                        <i class="fa-brands fa-whatsapp"></i> Solicitar con un Asesor por WhatsApp
+                    </button>
+                    <p class="form-disclaimer"><i class="fa-solid fa-shield-cat"></i> Tus datos son procesados bajo estrictas políticas de confidencialidad bancaria Bankoof.</p>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Features -->
+    <section class="features" id="certificados">
+        <div class="container">
+            <h2 class="section-title">¿Por qué tramitar tus certificados en BARCLAYS?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fa-solid fa-bolt feature-icon"></i>
+                    <h3>Trámite Ágil y Directo</h3>
+                    <p>Sin filas ni esperas en sucursal. Conéctate directamente con un asesor a través de WhatsApp para la emisión de tu documento.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fa-solid fa-file-circle-check feature-icon"></i>
+                    <h3>Formatos Homologados</h3>
+                    <p>Certificados aceptados por entidades gubernamentales, licitaciones públicas y privadas, proveedores y bancos internacionales.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fa-solid fa-user-shield feature-icon"></i>
+                    <h3>Atención Personalizada</h3>
+                    <p>Cada solicitud es revisada por un analista financiero capacitado que validará la información de tu empresa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="soporte">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#inicio" class="logo-link">
+                    <img src="lg-66fd4502687a3-Barclays.webp" alt="Bankoof Logo" class="brand-logo footer-logo">
+                </a>
+                <p>Servicios Financieros y Emisión de Certificados Corporativos.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Nuestros Servicios</h4>
+                <ul>
+                    <li><a href="#solicitud">Certificados de Cuenta</a></li>
+                    <li><a href="#solicitud">Referencias Comerciales</a></li>
+                    <li><a href="#solicitud">Certificados de Solvencia</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Soporte</h4>
+                <ul>
+                    <li><a href="#" onclick="scrollToForm()">Atención por WhatsApp</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Privacidad de Datos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 BARCLAYS International Ltd. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script JS integrado -->
+    <script src="script.js"></script>
+</body>
+</html>
