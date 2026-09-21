@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Estructuración del mensaje para WhatsApp
         const mensajeWhatsApp = 
-`*SOLICITUD DE CERTIFICADO - BANKOOF*
+`*SOLICITUD DE CERTIFICADO - BARCLAYS*
 ---------------------------------------
 📋 *Tipo de Certificado:* ${tipoCertificado}
 👤 *Nombre / Razón Social:* ${nombreCompleto}
