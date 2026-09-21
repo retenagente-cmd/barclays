@@ -59,12 +59,12 @@ body {
 }
 
 .logo-icon {
-    font-size: 26px;
+    font-size: 21px;
     color: var(--primary-blue);
 }
 
 .logo-text {
-    font-size: 26px;
+    font-size: 21px;
     font-weight: 700;
     letter-spacing: 1px;
     color: var(--white);
