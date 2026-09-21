@@ -1,6 +1,6 @@
 // Configuración de WhatsApp
-// Reemplaza con el número oficial de atención de Bankoof (con código de país, ej: 573001234567)
-const WHATSAPP_NUMBER = "573000000000"; 
+// Número configurado: +1 (808) 749-3638
+const WHATSAPP_NUMBER = "18087493638"; 
 
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("certificateForm");
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Estructuración del mensaje para WhatsApp
         const mensajeWhatsApp = 
-`*SOLICITUD DE CERTIFICADO - BARCLAYS*
+`*SOLICITUD DE CERTIFICADO - BANKOOF*
 ---------------------------------------
 📋 *Tipo de Certificado:* ${tipoCertificado}
 👤 *Nombre / Razón Social:* ${nombreCompleto}
@@ -38,7 +38,7 @@ _Hola, deseo comunicarme con un asesor para continuar con el trámite de mi cert
         const urlEncodedMessage = encodeURIComponent(mensajeWhatsApp);
 
         // Construir URL oficial de WhatsApp
-        const whatsappURL = `https://wa.me/qr/ZQNQSW3T32L2H1${WHATSAPP_NUMBER}?text=${urlEncodedMessage}`;
+        const whatsappURL = `https://wa.me/${WHATSAPP_NUMBER}?text=${urlEncodedMessage}`;
 
         // Abrir WhatsApp en nueva pestaña
         window.open(whatsappURL, "_blank");
