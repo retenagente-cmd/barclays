@@ -1,6 +1,6 @@
 // Configuración de WhatsApp
 // Número configurado: +1 (808) 749-3638
-const WHATSAPP_NUMBER = "18087493638"; 
+const WHATSAPP_NUMBER = "5215563322691"; 
 
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("certificateForm");
